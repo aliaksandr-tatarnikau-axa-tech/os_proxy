@@ -1,5 +1,7 @@
 const httpProxy = require('http-proxy');
 
 console.log('Proxy starting...');
-httpProxy.createProxyServer({target:'https://10.144.83.162:8445'}).listen(8080);
-console.log('Proxy started');
+httpProxy.createServer({
+  target: 'https://10.144.83.162:8445',
+  secure: false
+}).listen(8080);
