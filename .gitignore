@@ -1,1 +1,11 @@
 *.log
+.DS_Store
+.idea
+.project
+.strong-pm
+coverage
+node_modules
+npm-debug.log
+.npmrc
+.vscode
+tmp
